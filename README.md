@@ -37,3 +37,19 @@ This will tell the terminal to open in the current directory, not the home one.
 
 Run `` script.bat`` as administrator. In the end you get:
 ![Result of operation](img/result.png)
+
+# Activating the new start menu in Windows 10 (not actual on Windows 10 2010)
+
+![Comparison of old and new designs](example.gif)
+
+## 0. Preparing
+
+Go to ```Settings -> System -> About``` and check that you have version ```19041.423``` or above. If it's true, you can activate new menu.
+
+## 1. Apply
+
+Run [apply.reg](apply.reg) as administrator and restart explorer.exe or restart your computer to get new menu.
+
+## 2. Undo
+
+Run [undo.reg](undo.reg) as administrator and restart explorer.exe or restart your computer to return old menu.
