@@ -8,17 +8,17 @@ Launch Windows Terminal, call the drop-down menu, and open the settings file.
 
 Create new profile with name, which your wanted and ssh profile in ```commandline``` attribute.
 
-![Example of profile](img/ssh_example.png)
+![Example of profile](setup_ssh_profile/ssh_example.png)
 
 ## 2. Adding an icon
 
 Put image in some folder and add attribute ```icon``` to profile.
 
-![Example of icon](img/icon_example.png)
+![Example of icon](setup_ssh_profile/icon_example.png)
 
 Result:
 
-![Result of ssh](img/res_ssh.png)
+![Result of ssh](setup_ssh_profile/res_ssh.png)
 
 # Adding "Open Windows Terminal here" in context menu
 
@@ -29,18 +29,18 @@ Clone the repository in any directory in your file system.
 ## 1. Setting the current directory as the default directory
 
 Launch Windows Terminal, call the drop-down menu, and open the settings file. Add a key to the default profile settings: ```"startingDirectory": "."``` .
-![Example settings.json](img/example.png)
+![Example settings.json](open_windows_terminal_context/example.png)
 
 This will tell the terminal to open in the current directory, not the home one.
 
 ## 2. Adding an item to the context menu
 
 Run `` script.bat`` as administrator. In the end you get:
-![Result of operation](img/result.png)
+![Result of operation](open_windows_terminal_context/result.png)
 
 # Activating the new start menu in Windows 10 (not actual on Windows 10 2010)
 
-![Comparison of old and new designs](example.gif)
+![Comparison of old and new designs](new_win10_start_menu/example.gif)
 
 ## 0. Preparing
 
@@ -48,8 +48,24 @@ Go to ```Settings -> System -> About``` and check that you have version ```19041
 
 ## 1. Apply
 
-Run [apply.reg](apply.reg) as administrator and restart explorer.exe or restart your computer to get new menu.
+Run [apply.reg](new_win10_start_menu/apply.reg) as administrator and restart explorer.exe or restart your computer to get new menu.
 
 ## 2. Undo
 
-Run [undo.reg](undo.reg) as administrator and restart explorer.exe or restart your computer to return old menu.
+Run [undo.reg](new_win10_start_menu/undo.reg) as administrator and restart explorer.exe or restart your computer to return old menu.
+
+# Team Viewer patcher
+
+After execution this scripts, Team Viewer private usage warning window will no longer appear.
+
+# Copy all
+
+Copy all data from with metainfo exclude `pattern` arg paths. Required installed [sudo](https://github.com/gerardog/gsudo) for Windows.
+
+# Normalize dates
+
+This script was used to edit the file metadata: the file creation date was set equal to the modification date after copying without saving all the metadata.
+
+# PDFMerger
+
+Merges several pictures or pdfs into one pdf.
