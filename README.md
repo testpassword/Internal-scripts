@@ -69,3 +69,7 @@ This script was used to edit the file metadata: the file creation date was set e
 # PDFMerger
 
 Merges several pictures or pdfs into one pdf.
+
+# afterburner_startup
+
+Startup MSI Afterburner only if discrete GPU enabled in Device Manager
