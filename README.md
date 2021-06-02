@@ -73,3 +73,7 @@ Merges several pictures or pdfs into one pdf.
 # afterburner_startup
 
 Startup MSI Afterburner only if discrete GPU enabled in Device Manager
+
+# docker_wsl_optimize
+
+Optimize space usage of Docker WSL data disk
