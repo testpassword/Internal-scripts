@@ -74,6 +74,6 @@ Merges several pictures or pdfs into one pdf.
 
 Startup MSI Afterburner only if discrete GPU enabled in Device Manager
 
-# docker_wsl_optimize
+# docker_env
 
-Optimize space usage of Docker WSL data disk
+Script for download and restore utilized containers on new PC. Also works on Unix machines with installed PowerShell 7.

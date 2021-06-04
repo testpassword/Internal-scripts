@@ -4,7 +4,7 @@ from PIL import Image
 import os
 
 
-def convert(file):
+def convert(file: str) -> str:
     ext = file.split('.')[-1]
     if ext == 'pdf': return file
     elif ext in ['jpg', 'jpeg', 'png']:
