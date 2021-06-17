@@ -77,3 +77,7 @@ Startup MSI Afterburner only if discrete GPU enabled in Device Manager
 # docker_env
 
 Script for download and restore utilized containers on new PC. Also works on Unix machines with installed PowerShell 7.
+
+# postinstall
+
+Scripts for restore system envs on clean Mac.
