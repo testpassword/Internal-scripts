@@ -44,15 +44,15 @@ Run `` script.bat`` as administrator. In the end you get:
 
 ## 0. Preparing
 
-Go to ```Settings -> System -> About``` and check that you have version ```19041.423``` or above. If it's true, you can activate new menu.
+Go to `Settings -> System -> About` and check that you have version `19041.423` or above. If it's true, you can activate new menu.
 
 ## 1. Apply
 
-Run [apply.reg](new_win10_start_menu/apply.reg) as administrator and restart explorer.exe or restart your computer to get new menu.
+Run [script](new_win10_start_menu/win10_new_start_menu.ps1) with param `--on`.
 
 ## 2. Undo
 
-Run [undo.reg](new_win10_start_menu/undo.reg) as administrator and restart explorer.exe or restart your computer to return old menu.
+Run [script](new_win10_start_menu/win10_new_start_menu.ps1) with param `--off`.
 
 # Team Viewer patcher
 

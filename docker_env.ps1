@@ -8,12 +8,12 @@ $MODES = @(
 )
 $mode = $args[0]
 if (!$Env:Path.Contains('docker') -or !(flatten $MODES).Contains($mode)) {
-    Write-Error "docker doesnt install on this computer on not added to PATH system varible"
+    Write-Error "docker doesnt install on this computer on not added to PATH system variable or mode set incorrectly"
     return -1
 }
 if ($MODES[0].Contains($mode)) {
     optimize-vhd -Path .\ext4.vhdx -Mode full
-    docker builder prune -af
+    docker builder prune -f
     docker volume prune -f
     dcoker image prune -f
 } elseif ($MODES[1].Contains($mode)) {
