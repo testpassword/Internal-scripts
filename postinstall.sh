@@ -16,6 +16,7 @@ function add_exec_to_path() {
 function get_jdks() { /usr/libexec/java_home -V }
 
 # start jenkins
+# jenkins config files location in /Users/<User>/.jenkins/
 function start_jenkins() { jenkins-lts }
 
 # disable CleanMyMac HealthMonitor process
@@ -26,8 +27,7 @@ function CMMHM_disable() {
 
 # reset default dock size
 function reset_dock_size() {
-    defaults write com.apple.dock tilesize 64
-    killall Dock
+    defaults write com.apple.dock tilesize 64 && killall Dock
 }
 
 function clear_trash() { rm -rf /opt/groovy/doc }

@@ -81,3 +81,7 @@ Script for download and restore utilized containers on new PC. Also works on Uni
 # postinstall
 
 Scripts for restore system envs on clean Mac.
+
+# set_blockscreen
+
+Set background image different as wallpaper image on macOS BigSur.
